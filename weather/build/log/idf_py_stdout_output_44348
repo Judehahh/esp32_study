@@ -1,0 +1,83 @@
+[1/11] Performing build step for 'bootloader'
+[1/1] cd /Users/jude/esp/weather/build/bootloader/esp-idf/esptool_py && /Users/jude/.espressif/python_env/idf5.1_py3.10_env/bin/python /Users/jude/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /Users/jude/esp/weather/build/bootloader/bootloader.bin
+Bootloader binary size 0x4ef0 bytes. 0x3110 bytes (38%) free.
+[2/11] No install step for 'bootloader'
+[3/11] cd /Users/jude/esp/weather/build && /Users/jude/.espressif/python_env/idf5.1_py3.10_env/bin/python /Users/jude/esp/esp-idf/components/spiffs/spiffsgen.py 0xf0000 /Users/jude/esp/weather/font /Users/jude/esp/weather/build/storage.bin --page-size=256 --obj-name-len=32 --meta-len=4 --use-magic --use-magic-len
+[4/11] Completed 'bootloader'
+[5/11] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+In file included from /Users/jude/esp/weather/main/pngle.h:30,
+                 from /Users/jude/esp/weather/main/decode_png.h:4,
+                 from /Users/jude/esp/weather/main/main.c:18:
+/Users/jude/esp/esp-idf/components/esp_rom/include/esp32c3/rom/miniz.h:7:2: warning: #warning "{target}/rom/miniz.h is deprecated, please use (#include "miniz.h") instead" [-Wcpp]
+    7 | #warning "{target}/rom/miniz.h is deprecated, please use (#include "miniz.h") instead"
+      |  ^~~~~~~
+[6/11] Linking C static library esp-idf/main/libmain.a
+[7/11] Generating ld/sections.ld
+[8/11] Linking CXX executable weather.elf
+[9/11] Generating binary image from built executable
+esptool.py v4.3
+Creating esp32c3 image...
+Merged 1 ELF section
+Successfully created esp32c3 image.
+Generated /Users/jude/esp/weather/build/weather.bin
+[10/11] cd /Users/jude/esp/weather/build/esp-idf/esptool_py && /Users/jude/.espressif/python_env/idf5.1_py3.10_env/bin/python /Users/jude/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /Users/jude/esp/weather/build/partition_table/partition-table.bin /Users/jude/esp/weather/build/weather.bin
+weather.bin binary size 0x3d2d0 bytes. Smallest app partition is 0x100000 bytes. 0xc2d30 bytes (76%) free.
+[10/11] cd /Users/jude/esp/esp-idf/components/esptool_py && /usr/local/Cellar/cmake/3.25.0/bin/cmake -D IDF_PATH=/Users/jude/esp/esp-idf -D "SERIAL_TOOL=/Users/jude/.espressif/python_env/idf5.1_py3.10_env/bin/python;;/Users/jude/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32c3" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/Users/jude/esp/weather/build -P /Users/jude/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool esp32c3 -p /dev/cu.wchusbserial544C0209041 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 4MB 0x0 bootloader/bootloader.bin 0x10000 weather.bin 0x8000 partition_table/partition-table.bin 0x110000 storage.bin
+esptool.py v4.3
+Serial port /dev/cu.wchusbserial544C0209041
+Connecting....
+Chip is ESP32-C3 (revision v0.3)
+Features: WiFi, BLE
+Crystal is 40MHz
+MAC: 60:55:f9:74:71:c8
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00004fff...
+Flash will be erased from 0x00010000 to 0x0004dfff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Flash will be erased from 0x00110000 to 0x001fffff...
+Compressed 20208 bytes to 12400...
+Writing at 0x00000000... (100 %)
+Wrote 20208 bytes (12400 compressed) at 0x00000000 in 0.5 seconds (effective 338.4 kbit/s)...
+Hash of data verified.
+Compressed 250576 bytes to 131244...
+Writing at 0x00010000... (11 %)
+Writing at 0x0001bd86... (22 %)
+Writing at 0x00022148... (33 %)
+Writing at 0x000293b3... (44 %)
+Writing at 0x0002fba3... (55 %)
+Writing at 0x00037560... (66 %)
+Writing at 0x0003ed08... (77 %)
+Writing at 0x000460dc... (88 %)
+Writing at 0x0004d0fb... (100 %)
+Wrote 250576 bytes (131244 compressed) at 0x00010000 in 3.6 seconds (effective 563.6 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 119...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (119 compressed) at 0x00008000 in 0.0 seconds (effective 617.8 kbit/s)...
+Hash of data verified.
+Compressed 983040 bytes to 226226...
+Writing at 0x00110000... (7 %)
+Writing at 0x00120d20... (14 %)
+Writing at 0x00125cc1... (21 %)
+Writing at 0x0012ac2a... (28 %)
+Writing at 0x0012fe2e... (35 %)
+Writing at 0x00134e93... (42 %)
+Writing at 0x00139e4b... (50 %)
+Writing at 0x0013edd0... (57 %)
+Writing at 0x00143e64... (64 %)
+Writing at 0x001491db... (71 %)
+Writing at 0x0014e44d... (78 %)
+Writing at 0x00159df5... (85 %)
+Writing at 0x0015e422... (92 %)
+Writing at 0x0016280b... (100 %)
+Wrote 983040 bytes (226226 compressed) at 0x00110000 in 10.8 seconds (effective 725.3 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

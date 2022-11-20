@@ -1,0 +1,45 @@
+-- Found Git: /usr/bin/git (found version "2.32.0 (Apple Git-132)") 
+-- The C compiler identification is GNU 11.2.0
+-- The CXX compiler identification is GNU 11.2.0
+-- The ASM compiler identification is GNU
+-- Found assembler: /Users/jude/.espressif/tools/riscv32-esp-elf/esp-2022r1-11.2.0/riscv32-esp-elf/bin/riscv32-esp-elf-gcc
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /Users/jude/.espressif/tools/riscv32-esp-elf/esp-2022r1-11.2.0/riscv32-esp-elf/bin/riscv32-esp-elf-gcc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /Users/jude/.espressif/tools/riscv32-esp-elf/esp-2022r1-11.2.0/riscv32-esp-elf/bin/riscv32-esp-elf-g++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Project is not inside a git repository, or git repository has no commits; will not use 'git describe' to determine PROJECT_VER.
+-- Building ESP-IDF components for target esp32c3
+-- Project sdkconfig file /Users/jude/esp/weather/sdkconfig
+Loading defaults file /Users/jude/esp/weather/sdkconfig.defaults...
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of time_t
+-- Check size of time_t - done
+-- Found Python3: /Users/jude/.espressif/python_env/idf5.1_py3.10_env/bin/python (found version "3.10.8") found components: Interpreter 
+-- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS
+-- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS - Success
+-- App "weather" version: 1
+-- Adding linker script /Users/jude/esp/weather/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script /Users/jude/esp/esp-idf/components/esp_system/ld/esp32c3/sections.ld.in
+-- Adding linker script /Users/jude/esp/esp-idf/components/esp_rom/esp32c3/ld/esp32c3.rom.ld
+-- Adding linker script /Users/jude/esp/esp-idf/components/esp_rom/esp32c3/ld/esp32c3.rom.api.ld
+-- Adding linker script /Users/jude/esp/esp-idf/components/esp_rom/esp32c3/ld/esp32c3.rom.libgcc.ld
+-- Adding linker script /Users/jude/esp/esp-idf/components/esp_rom/esp32c3/ld/esp32c3.rom.newlib.ld
+-- Adding linker script /Users/jude/esp/esp-idf/components/esp_rom/esp32c3/ld/esp32c3.rom.version.ld
+-- Adding linker script /Users/jude/esp/esp-idf/components/esp_rom/esp32c3/ld/esp32c3.rom.eco3.ld
+-- Adding linker script /Users/jude/esp/esp-idf/components/soc/esp32c3/ld/esp32c3.peripherals.ld
+-- Components: app_trace app_update bootloader bootloader_support bt cmock console cxx driver efuse esp-tls esp_adc esp_app_format esp_common esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_netif esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_system esp_timer esp_wifi espcoredump esptool_py fatfs freertos hal heap http_parser idf_test ieee802154 json log lwip main mbedtls mqtt newlib nvs_flash openthread partition_table protobuf-c protocomm pthread riscv sdmmc soc spi_flash spiffs tcp_transport ulp unity usb vfs wear_levelling wifi_provisioning wpa_supplicant
+-- Component paths: /Users/jude/esp/esp-idf/components/app_trace /Users/jude/esp/esp-idf/components/app_update /Users/jude/esp/esp-idf/components/bootloader /Users/jude/esp/esp-idf/components/bootloader_support /Users/jude/esp/esp-idf/components/bt /Users/jude/esp/esp-idf/components/cmock /Users/jude/esp/esp-idf/components/console /Users/jude/esp/esp-idf/components/cxx /Users/jude/esp/esp-idf/components/driver /Users/jude/esp/esp-idf/components/efuse /Users/jude/esp/esp-idf/components/esp-tls /Users/jude/esp/esp-idf/components/esp_adc /Users/jude/esp/esp-idf/components/esp_app_format /Users/jude/esp/esp-idf/components/esp_common /Users/jude/esp/esp-idf/components/esp_eth /Users/jude/esp/esp-idf/components/esp_event /Users/jude/esp/esp-idf/components/esp_gdbstub /Users/jude/esp/esp-idf/components/esp_hid /Users/jude/esp/esp-idf/components/esp_http_client /Users/jude/esp/esp-idf/components/esp_http_server /Users/jude/esp/esp-idf/components/esp_https_ota /Users/jude/esp/esp-idf/components/esp_https_server /Users/jude/esp/esp-idf/components/esp_hw_support /Users/jude/esp/esp-idf/components/esp_lcd /Users/jude/esp/esp-idf/components/esp_local_ctrl /Users/jude/esp/esp-idf/components/esp_netif /Users/jude/esp/esp-idf/components/esp_partition /Users/jude/esp/esp-idf/components/esp_phy /Users/jude/esp/esp-idf/components/esp_pm /Users/jude/esp/esp-idf/components/esp_psram /Users/jude/esp/esp-idf/components/esp_ringbuf /Users/jude/esp/esp-idf/components/esp_rom /Users/jude/esp/esp-idf/components/esp_system /Users/jude/esp/esp-idf/components/esp_timer /Users/jude/esp/esp-idf/components/esp_wifi /Users/jude/esp/esp-idf/components/espcoredump /Users/jude/esp/esp-idf/components/esptool_py /Users/jude/esp/esp-idf/components/fatfs /Users/jude/esp/esp-idf/components/freertos /Users/jude/esp/esp-idf/components/hal /Users/jude/esp/esp-idf/components/heap /Users/jude/esp/esp-idf/components/http_parser /Users/jude/esp/esp-idf/components/idf_test /Users/jude/esp/esp-idf/components/ieee802154 /Users/jude/esp/esp-idf/components/json /Users/jude/esp/esp-idf/components/log /Users/jude/esp/esp-idf/components/lwip /Users/jude/esp/weather/main /Users/jude/esp/esp-idf/components/mbedtls /Users/jude/esp/esp-idf/components/mqtt /Users/jude/esp/esp-idf/components/newlib /Users/jude/esp/esp-idf/components/nvs_flash /Users/jude/esp/esp-idf/components/openthread /Users/jude/esp/esp-idf/components/partition_table /Users/jude/esp/esp-idf/components/protobuf-c /Users/jude/esp/esp-idf/components/protocomm /Users/jude/esp/esp-idf/components/pthread /Users/jude/esp/esp-idf/components/riscv /Users/jude/esp/esp-idf/components/sdmmc /Users/jude/esp/esp-idf/components/soc /Users/jude/esp/esp-idf/components/spi_flash /Users/jude/esp/esp-idf/components/spiffs /Users/jude/esp/esp-idf/components/tcp_transport /Users/jude/esp/esp-idf/components/ulp /Users/jude/esp/esp-idf/components/unity /Users/jude/esp/esp-idf/components/usb /Users/jude/esp/esp-idf/components/vfs /Users/jude/esp/esp-idf/components/wear_levelling /Users/jude/esp/esp-idf/components/wifi_provisioning /Users/jude/esp/esp-idf/components/wpa_supplicant
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/jude/esp/weather/build
